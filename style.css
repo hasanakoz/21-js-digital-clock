@@ -1,0 +1,12 @@
+.clock {
+  display: flex;
+  justify-content: center;
+  font-size: 10rem;
+  margin-top: 10%;
+}
+
+.date {
+  display: flex;
+  justify-content: center;
+  font-size: 5rem;
+}
