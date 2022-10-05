@@ -19,7 +19,9 @@ setInterval(() => {
     ? (secondArea.innerHTML = `:0${second}`)
     : (secondArea.innerHTML = `:${second}`);
   minute = new Date().getMinutes();
-  minuteArea.innerHTML = `:${minute}`;
+  minute < 10
+    ? (minuteArea.innerHTML = `:0${minute}`)
+    : (minuteArea.innerHTML = `:${minute}`);
   hour = new Date().getHours();
   hour < 10
     ? (hourArea.innerHTML = `0${hour}`)
@@ -27,27 +29,9 @@ setInterval(() => {
   day = new Date().getDate();
   day < 10 ? (dayArea.innerHTML = `0${day}`) : (dayArea.innerHTML = `${day}`);
   month = new Date().getMonth();
-  month < 10
+  month + 1 < 10
     ? (monthArea.innerHTML = `:0${month + 1}`)
     : (monthArea.innerHTML = `:${month + 1}`);
   year = new Date().getFullYear();
   yearArea.innerHTML = `:${year}`;
 }, 1000);
-
-// setInterval(() => {}, 1000);
-
-// setInterval(() => {
-
-// }, 1000);
-
-// setInterval(() => {
-
-// }, 1000);
-
-// setInterval(() => {
-
-// }, 1000);
-
-// setInterval(() => {
-
-// }, 1000);
